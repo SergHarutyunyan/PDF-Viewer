@@ -1,0 +1,66 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+#DownloadButton {
+   position:relative;
+   left:40%;
+}
+
+div.container {
+    padding: 0;
+}
+
+#OptionsPanel {
+    background: #B6B6B6;
+    border: solid rgb(126, 122, 122) 1px;
+    margin: 0;
+}
+
+#Options {
+    display: table;
+    margin: 2 auto;
+}
+
+#PDF{
+    height: 900px;
+    overflow: scroll;
+} 
+
+.menu-hamburger-icon {
+    font-size: 30px;
+    margin-left: 10px !important;
+} 
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.divider {
+    width: 0;
+    height: 3em;
+    border-right: 1px solid grey;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid grey;
+    border-bottom: 16px solid grey;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
